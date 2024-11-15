@@ -22,4 +22,6 @@
 
 `ffmpeg -copyts -ss [start] -i in.mp4 -to [end] -map 0 -c copy out.mp4` from https://superuser.com/a/377407
 
+Some videos can break in telegram with this method. I plan to add the duration version soon
+
 ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/QTTB-Trimmer.png?raw=true)
