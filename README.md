@@ -22,4 +22,4 @@
 
 `ffmpeg -ss 00:00:00 -to 00:00:53 -i input_file output_file`
 
-
+![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/QTTB-Trimmer.png?raw=true)
