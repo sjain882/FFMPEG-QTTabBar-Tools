@@ -39,8 +39,9 @@ namespace QTTB_Trimmer
         // https://superuser.com/a/377407 BEST TRIM DOCUMENTATION
         void button1_Click(object sender, EventArgs e)
         {
+            // Switch /C to /K to keep cmd open
             string args =
-               "/K ffmpeg  -copyts -ss "
+               "/C ffmpeg  -copyts -ss "
                + form.dateTimePicker1.Value.TimeOfDay.ToString()
                + " -i \""
                + inputPath
@@ -53,7 +54,14 @@ namespace QTTB_Trimmer
 
             //MessageBox.Show(args);
 
-            System.Diagnostics.Process.Start(@"cmd.exe", args);
+            System.Diagnostics.Process P = System.Diagnostics.Process.Start(@"cmd.exe", args);
+            P.WaitForExit();
+            int result = P.ExitCode;
+            //MessageBox.Show(result.ToString());
+            if (result == 0)
+            {
+                Application.Exit();
+            }
         }
     }
 }
