@@ -1,4 +1,4 @@
-"# FFMPEG-QTTabBar-Tools" 
+# FFMPEG-QTTabBar-Tools
 
 *This repo is for personal use only & very WIP*
 
