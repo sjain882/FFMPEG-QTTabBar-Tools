@@ -36,17 +36,18 @@ namespace QTTB_Trimmer
             return Path.Combine(fDir, String.Concat(fName, suffix, fExt));
         }
 
+        // https://superuser.com/a/377407 BEST TRIM DOCUMENTATION
         void button1_Click(object sender, EventArgs e)
         {
             string args =
-               "/K ffmpeg -ss "
+               "/K ffmpeg  -copyts -ss "
                + form.dateTimePicker1.Value.TimeOfDay.ToString()
+               + " -i \""
+               + inputPath
+               + "\" "
                + " -to "
                + form.dateTimePicker2.Value.TimeOfDay.ToString()
-               + " "
-               + "-i \""
-               + inputPath
-               + "\" \""
+               + " -map 0 -c copy \""
                + this.outputPath
                + "\"";
 

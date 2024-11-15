@@ -87,4 +87,7 @@
     <Content Include="icons8-scissors-100_jpg.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).exe" "C:\Program Files\QTTabBar Plugins\FFMPEG Command Bar Tools\$(ProjectName).exe"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
