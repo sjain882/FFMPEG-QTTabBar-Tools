@@ -32,6 +32,15 @@ Then, repeat that right click and:
 
 4. Right click on created folder > Edit icon > Set to `Icon\Movie128_jpg.ico` (thanks [Icons8](https://icons8.com/icons/set/film-camera--static--white)).
 
+5. Refer to "Usage" above
+
+6. Drag newly created icons into this folder.
+
+7. Repeat toolbar right click and set options as follows, to remove all annoying lines:
+
+
+![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings2.png?raw=true)
+
 ***
 
 ### `QTTB-Trimmer`
