@@ -16,6 +16,8 @@
 
 6. Arguments - add %f% - for currently selected file(s).
 
+***
+
 ### Creating quick folder
 
 ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/Toolbar.png?raw=true)
@@ -45,6 +47,16 @@ Then, repeat that right click and:
 
 ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings2.png?raw=true)
 </details>
+
+***
+
+### `QTTB-MKV-To-MP4`
+
+`ffmpeg -i INPUT.mkv -codec copy OUTPUT.mp4 -movflags +faststart` from https://askubuntu.com/a/396906
+
+Works in batch if multiple files specified. Best used with OBS mkvs - just switches container from MKV to MP4 without re-encode.
+
+If you have issues with this command, update FFMPEG. No GUI.
 
 ***
 
