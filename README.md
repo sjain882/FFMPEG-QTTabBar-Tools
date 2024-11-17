@@ -1,6 +1,6 @@
 # FFMPEG-QTTabBar-Tools
 
-*This repo is for personal use only & very WIP*
+*No support provided*
 
 ### Usage:
 
@@ -43,19 +43,30 @@ Then, repeat that right click and:
 
 ***
 
+### `QTTB-MP4-Optimizer`
+
+`ffmpeg -i INPUT.mp4 -vcodec libx264 -crf 24 OUTPUT.mp4` from https://unix.stackexchange.com/a/38380
+
+Works in batch if multiple files specified. Best used with h264 .mp4 files from OBS.
+
+![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/QTTB-MP4-Optimizer.png?raw=true)
+
+***
+
 ### `QTTB-Trimmer`
 
-`ffmpeg -copyts -ss [start] -i in.mp4 -to [end] -map 0 -c copy out.mp4` from https://superuser.com/a/377407 (no re-encode)
+`ffmpeg -copyts -ss [start] -i INPUT.mp4 -to [end] -map 0 -c copy OUTPUT.mp4` from https://superuser.com/a/377407 (no re-encode)
 
-Some videos can break in telegram with this method. In those cases, use duration version instead.
+Some videos can break in telegram desktop + mobile with this method. In those cases, use duration version instead. Fine everywhere else.
 
 ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/QTTB-Trimmer.png?raw=true)
+
 ***
 
 ### `QTTB-Trimmer-Duration`
 
-`ffmpeg -ss [start] -i in.mp4 -t [duration] -map 0 -c copy out.mp4` from https://superuser.com/a/377407 (no re-encode)
+`ffmpeg -ss [start] -i INPUT.mp4 -t [duration] -map 0 -c copy OUTPUT.mp4` from https://superuser.com/a/377407 (no re-encode)
 
-Works fine with telegram.
+Works fine with telegram desktop, may still be broken in telegram mobile. Fine everywhere else.
 
 ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/QTTB-Trimmer-Duration.png?raw=true)
