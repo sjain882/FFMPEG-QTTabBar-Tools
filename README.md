@@ -18,28 +18,33 @@
 
 ### Creating quick folder
 
-Right click on toolbar empty space (leftmost/rightmost, not near any buttons) and set options as follows:
+![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/Toolbar.png?raw=true)
 
-![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings.png?raw=true)
+<details>
+    <summary>Expand</summary> 
 
-Then, repeat that right click and:
+    Right click on toolbar empty space (leftmost/rightmost, not near any buttons) and set options as follows:
 
-1. Add items
+    ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings.png?raw=true)
 
-2. Add virtual folder
+    Then, repeat that right click and:
 
-3. Right click on created folder > Edit label > Replace with this blank char: `‎` (U+200E)
+    1. Add items
 
-4. Right click on created folder > Edit icon > Set to `Icon\Movie128_jpg.ico` (thanks [Icons8](https://icons8.com/icons/set/film-camera--static--white)).
+    2. Add virtual folder
 
-5. Refer to "Usage" above
+    3. Right click on created folder > Edit label > Replace with this blank char: `‎` (U+200E)
 
-6. Drag newly created icons into this folder.
+    4. Right click on created folder > Edit icon > Set to `Icon\Movie128_jpg.ico` (thanks [Icons8](https://icons8.com/icons/set/film-camera--static--white)).
 
-7. Repeat toolbar right click and set options as follows, to remove all annoying lines:
+    5. Refer to "Usage" above
 
+    6. Drag newly created icons into this folder.
 
-![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings2.png?raw=true)
+    7. Repeat toolbar right click and set options as follows, to remove all annoying lines:
+
+    ![SCREENSHOT](https://raw.githubusercontent.com/sjain882/FFMPEG-QTTabBar-Tools/refs/heads/main/Previews/CBar-Settings2.png?raw=true)
+</details>
 
 ***
 
